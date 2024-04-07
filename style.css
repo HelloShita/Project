@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    color: #000;
+    background-color: #f8dddd;
+    border-radius: 5px;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    /* Embossed effect with slight adjustment */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+                -3px -3px 5px rgba(255, 255, 255, 0.5);
+     /* New property to limit height */
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #000000; /* Light pink for the title */
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f0f0f0; /* Light pink for labels */
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: #FF0055; /* Deep pink for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e00032; /* Darker pink on hover */
+  }
+  
+  /* Add a subtle heart border for the container */
+  .container {
+    border: 2px dashed #f0f0f0; /* Light pink dashed border */
+    animation: heartbeat 1.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.02);
+    }
+  }
+  

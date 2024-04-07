@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+.right-image {
+    /* No width specified, keeps image's natural width */
+    width: 40%;
+}
+.left-image{
+  width: 20%;
+  
+}
+
+.center-rectangle {
+    flex: 1; /* Take remaining space in container */
+    background-color: #e8c0d8; /* Light blue-gray background */
+    margin: 10px; /* Add some margin */
+    padding: 12px; /* Add padding for spacing */
+    font-family: serif; /* Elegant serif font */
+    font-size: 1.1em; /* Moderate font size for readability */
+    color: #333; /* Dark readable text color */
+    text-align: justify; /* Justify text for better alignment */
+    /* width: 40%; */
+}
+
+.button-container {
+    display: flex; /* Arrange buttons horizontally */
+    justify-content:flex-end; /* Align buttons to the right */
+    margin-top: 2px; /* Add some margin from the text */
+}
+
+.button {
+    background-color: #ba55e9; /* Green color for the button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding for spacing */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners */
+    margin-left: 10px; /* Add some margin between buttons */
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth movement */
+}
+
+.button-yes:hover {
+    /* No additional styles needed */
+    background-color: #a70fee;
+}
+
+.button-no:hover,
+.button-no.clicked { /* Target hover and clicked state */
+    transform: translateX(100px); /* Shift the button right on hover or click */
+}
+
+/* Media query for smaller screens (typical tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+  .left-image,
+  .right-image {
+    width: 45%; /* Adjusted width for smaller screens (can be removed if desired) */
+  }
+  .button-container {
+    justify-content: center; /* Center buttons horizontally on small screens */
+  }
+}
